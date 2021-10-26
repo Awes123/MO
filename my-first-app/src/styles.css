@@ -1,0 +1,36 @@
+@import 'assets/Site.css';
+@import 'assets/Main.css';
+@import 'assets/Bootstrap.css';
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.swiper-wrapper {
+  display: inline-flex !important;
+}
+
+.custom-Modal {
+  position: absolute;
+  top: 10%;
+  background: #fff;
+  left: 25%;
+  right: 25%;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 1px 1px 3px 3px #dddddd;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.form-control {
+  display: block !important;
+  width: 100%!important;
+  height: 44px!important;
+  padding: .375rem .75rem!important;
+  font-size: 14px!important;
+  font-weight: 400!important;
+  line-height: 1.5!important;
+}

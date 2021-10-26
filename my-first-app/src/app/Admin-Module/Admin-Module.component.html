@@ -1,0 +1,452 @@
+<div class="loader-wrapper" style="display: none;">
+  <div class="loader spinner-3">
+      <div class="bg-primary"></div>
+      <div class="bg-primary"></div>
+      <div class="bg-primary"></div>
+      <div class="bg-primary"></div>
+      <div class="bg-primary"></div>
+      <div class="bg-primary"></div>
+      <div class="bg-primary"></div>
+      <div class="bg-primary"></div>
+      <div class="bg-primary"></div>
+  </div>
+</div>
+<div class="wrapper">
+  <!-- Main Container -->
+  <div id="main-wrapper" class="menu-fixed page-hdr-fixed">
+      <!-- Menu Wrapper -->
+      <div class="menu-wrapper">
+          <div class="menu">
+              <!-- Menu Container -->
+              <ul class="ps">
+                  <li routerLinkActive="active">
+                      <a routerLink="/admin/dashboard" class="header__nav-link"><i class="fa fa-layer-group"></i>Dashboard </a>
+                  </li>
+                  <li routerLinkActive="active">
+                      <a routerLink="/admin/categories" class="header__nav-link"><i class="far fa-list-alt"></i>Categories </a>
+                  </li>
+                  <li routerLinkActive="active">
+                      <a routerLink="/admin/genders" class="header__nav-link"><i class="far fa-users"></i>Genders</a>
+                  </li>
+                  <li routerLinkActive="active">
+                      <a routerLink="/admin/charges" class="header__nav-link"><i class="fas fa-rupee-sign"></i>Charges</a>
+                  </li>
+                  <li routerLinkActive="active">
+                      <a routerLink="/admin/products" class="header__nav-link"><i class="fas fa-glasses"></i>Products</a>
+                  </li>
+                  <li routerLinkActive="active">
+                      <a routerLink="/admin/contactlens" class="header__nav-link"><i class="fas fa-microscope"></i>Contact Lens</a>
+                  </li>
+                  <li routerLinkActive="active">
+                      <a routerLink="/admin/outofStock" class="header__nav-link"><i class="fas fa-store"></i>Out of stock</a>
+                  </li>
+                  <li routerLinkActive="active">
+                      <a routerLink="/admin/incart" class="header__nav-link"><i class="fas fa-cart-plus"></i>Product in cart</a>
+                  </li>
+                  <li routerLinkActive="active">
+                      <a routerLink="/admin/review" class="header__nav-link"><i class="fas fa-comments"></i><span>Reviews</span></a>
+                  </li>
+                  <li routerLinkActive="active">
+                      <a routerLink="/admin/banners" class="header__nav-link"><i class="fas fa-flag"></i><span>Banner</span></a>
+                  </li>
+                  <li routerLinkActive="active">
+                      <a routerLink="/admin/queries" class="header__nav-link"><i class="fas fa-puzzle-piece"></i><span>Query List</span></a>
+                  </li>
+                  <li routerLinkActive="active">
+                      <a routerLink="/admin/lenses" class="header__nav-link"><i class="fas fa-tablet-alt"></i><span>Lenses</span></a>
+                  </li>
+                  <li routerLinkActive="active">
+                      <a href="/Auth/Logout" class="header__nav-link"><i class="fas fa-lock"></i><span>LOGOUT</span></a>
+                  </li>
+              <div class="ps__rail-x" style="left: 0px; top: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; left: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></ul>
+          </div>
+      </div>
+      <!-- Page header -->
+      <div class="page-hdr">
+          <div class="row align-items-center">
+              <div class="col-4 col-md-7 page-hdr-left">
+                  <!-- Logo Container -->
+                  <div id="logo">
+                      <div class="tbl-cell logo-icon">
+                          <a href="/Admin/Default/Index" class="header__logo-link dropdown__link" style="font-size: 21px;
+font-weight: 700; color:white">
+                              Minhaj Optical
+                          </a>
+                      </div>
+                      <div class="tbl-cell logo">
+                          <a href="/Admin/Default/Index" class="header__logo-link dropdown__link" style="font-size: 21px;
+font-weight: 700; color:white">
+                              Minhaj Optical
+                          </a>
+                      </div>
+                  </div>
+                  <div class="page-menu menu-icon">
+                      <a class="animated menu-close"><i class="far fa-hand-point-left"></i></a>
+                  </div>
+                  <div class="page-menu page-fullscreen">
+                      <a><i class="fas fa-expand"></i></a>
+                  </div>
+                  <div class="page-search d-none hidden">
+                      <input type="text" placeholder="Search your key....">
+                  </div>
+              </div>
+              <div class="col-8 col-md-5 page-hdr-right">
+                  <div class="page-hdr-desktop">
+                      <div class="page-menu menu-dropdown-wrapper menu-user">
+                          <a class="user-link">
+                              <span class="tbl-cell user-name pr-3"><span class="pl-2">Ahmed</span></span>
+                          </a>
+                          <div class="menu-dropdown menu-dropdown-right menu-dropdown-push-right">
+                              <div class="arrow arrow-right"></div>
+                              <div class="menu-dropdown-inner">
+                                  <!--  <div class="menu-dropdown-head pb-3">
+                                                                  <div class="tbl-cell">
+                                                                      <img src="uploads/author-1.jpg" alt="">
+                                                                      <i class="fa fa-user-circle"></i>
+                              </div>
+                              <div class="tbl-cell pl-2 text-left">
+                                  <p class="m-0 font-18">John Doe</p>
+                                  <p class="m-0 font-14">Demonstration</p>
+                              </div>
+                          </div>
+                          <div class="menu-dropdown-body">
+                              <ul class="menu-nav">
+                                  <li><a href="#"><i class="icon-event"></i><span>My Events</span></a></li>
+                                  <li><a href="#"><i class="icon-notebook"></i><span>My Notes</span></a></li>
+                                  <li><a href="#"><i class="icon-user"></i><span>My Profile</span></a></li>
+                                  <li><a href="#"><i class="icon-globe-alt"></i><span>Client Portal</span></a></li>
+                              </ul>
+                          </div>-->
+                                  <div class="menu-dropdown-footer text-right">
+                                      <a href="/Auth/Logout" class="btn btn-outline btn-primary btn-pill btn-outline-2x font-12 btn-sm">Logout</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!--
+                  <div class="page-menu menu-dropdown-wrapper menu-notification">
+                  <a><i class="icon-bell"></i><span class="notification">20</span></a>
+                  <div class="menu-dropdown menu-dropdown-right menu-dropdown-push-right">
+                      <div class="arrow arrow-right"></div>
+                      <div class="menu-dropdown-inner">
+                          <div class="menu-dropdown-head">Notification</div>
+                          <div class="menu-dropdown-body">
+                              <ul class="timeline m-0">
+                                  <li>
+                                      <a href="#" target="_blank" class="timeline-container">
+                                          <div class="arrow"></div>
+                                          <div class="description">Wallet Adddes </div>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" target="_blank" class="timeline-container">
+                                          <div class="arrow"></div>
+                                          <div class="description">Coin Transferred from BTC<span class="badge badge-danger badge-pill badge-sm">Unpaid</span></div>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" target="_blank" class="timeline-container">
+                                          <div class="arrow"></div>
+                                          <div class="description">BTC bought</div>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" target="_blank" class="timeline-container">
+                                          <div class="arrow"></div>
+                                          <div class="description">Server Restarted <span class="badge badge-success badge-pill badge-sm">Resolved</span></div>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" target="_blank" class="timeline-container">
+                                          <div class="arrow"></div>
+                                          <div class="description">New order received</div>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="page-menu menu-dropdown-wrapper menu-quick-links">
+                  <a><i class="icon-grid"></i></a>
+                  <div class="menu-dropdown menu-dropdown-right menu-dropdown-push-right">
+                      <div class="arrow arrow-right"></div>
+                      <div class="menu-dropdown-inner">
+                          <div class="menu-dropdown-head">Quick Links</div>
+                          <div class="menu-dropdown-body p-0">
+                              <div class="row m-0 box">
+                                  <div class="col-6 p-0 box">
+                                      <a href="#">
+                                          <i class="icon-emotsmile"></i>
+                                          <span>New Contact</span>
+                                      </a>
+                                  </div>
+                                  <div class="col-6 p-0 box">
+                                      <a href="#">
+                                          <i class="icon-docs"></i>
+                                          <span>New Invoice</span>
+                                      </a>
+                                  </div>
+                                  <div class="col-6 p-0 box">
+                                      <a href="#">
+                                          <i class="icon-calculator"></i>
+                                          <span>New Quote</span>
+                                      </a>
+                                  </div>
+                                  <div class="col-6 p-0 box">
+                                      <a href="#">
+                                          <i class="icon-rocket"></i>
+                                          <span>New Expense</span>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="page-menu">
+                  <a class="open-sidebar-right"><i class="icon-settings"></i><span></span></a>
+              </div>
+                  -->
+                  </div>
+                  <div class="page-hdr-mobile">
+                      <div class="page-menu open-mobile-search">
+                          <a href="#"><i class="icon-magnifier"></i></a>
+                      </div>
+                      <div class="page-menu open-left-menu">
+                          <a href="#"><i class="icon-menu"></i></a>
+                      </div>
+                      <div class="page-menu oepn-page-menu-desktop">
+                          <a href="#"><i class="icon-options-vertical"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Main Page Wrapper -->
+      <div class="page-wrapper">
+          <!-- Page Title -->
+          <div class="page-title mb-2 mt-2">
+              <div class="row align-items-center">
+                  <div class="col-sm-6">
+                      <h2 class="page-title-text">Ahmed</h2>
+                  </div>
+              </div>
+          </div>
+          <!-- Page Body -->
+          <div class="page-body">
+            <router-outlet></router-outlet>
+          </div>
+      </div>
+      <!-- Page Footer -->
+      <div class="page-ftr d-none">
+          <div>© 2021. Cryptoboard Admin Minhaj Optical</div>
+      </div>
+  </div>
+          <!-- Sidebar Section -->
+          <div class="sidebar sidebar-right d-none hidden">
+              <div class="sidebar-close"><i class="icon-close"></i></div>
+              <div class="content">
+                  <ul class="nav nav-tabs nav-tabs-line nav-tabs-line-primary">
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#sidebar-member" data-toggle="tab">Member</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#sidebar-setting" data-toggle="tab">Settings</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#sidebar-log" data-toggle="tab">Logs</a>
+                      </li>
+                  </ul>
+                  <div class="tab-content">
+                      <div class="tab-pane active" id="sidebar-member">
+                          <div class="pl-2 pr-2">
+                              <div class="box-title pb-3">Premium Member</div>
+                              <div class="user-list br-bottom-1x pb-4">
+                                  <ul>
+                                      <li>
+                                          <div class="tbl-cell image">
+                                              <img src="uploads/team-1.jpg" alt="">
+                                          </div>
+                                          <div class="tbl-cell content">
+                                              <a>Steve Soren</a>
+                                              <p>Lead Developer at Ipos.</p>
+                                          </div>
+                                          <div class="tbl-cell follow">
+                                              <a href="#" class="btn btn-outline btn-info btn-pill btn-outline-1x btn-sm">Follow</a>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="tbl-cell image">
+                                              <img src="uploads/team-2.jpg" alt="">
+                                          </div>
+                                          <div class="tbl-cell content">
+                                              <a>Cheri Aria</a>
+                                              <p>Photographer and Lead Designer.</p>
+                                          </div>
+                                          <div class="tbl-cell follow">
+                                              <a href="#" class="btn btn-info btn-pill btn-sm">Following</a>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="tbl-cell image">
+                                              <img src="uploads/team-3.jpg" alt="">
+                                          </div>
+                                          <div class="tbl-cell content">
+                                              <a>Daniel Barnes</a>
+                                              <p>Manager at IT park.</p>
+                                          </div>
+                                          <div class="tbl-cell follow">
+                                              <a href="#" class="btn btn-outline btn-info btn-pill btn-outline-1x btn-sm">Follow</a>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="tbl-cell image">
+                                              <img src="uploads/team-4.jpg" alt="">
+                                          </div>
+                                          <div class="tbl-cell content">
+                                              <a>Janet Collins</a>
+                                              <p>Developer at atios.</p>
+                                          </div>
+                                          <div class="tbl-cell follow">
+                                              <a href="#" class="btn btn-outline btn-info btn-pill btn-outline-1x btn-sm">Follow</a>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="box-title pt-3 pb-3">Users</div>
+                              <div class="user-list">
+                                  <ul>
+                                      <li>
+                                          <div class="tbl-cell image">
+                                              <img src="uploads/team-1.jpg" alt="">
+                                          </div>
+                                          <div class="tbl-cell content">
+                                              <a>Steve Soren</a>
+                                              <p>Lead Developer at Ipos.</p>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="tbl-cell image">
+                                              <img src="uploads/team-2.jpg" alt="">
+                                          </div>
+                                          <div class="tbl-cell content">
+                                              <a>Cheri Aria</a>
+                                              <p>Photographer and Lead Designer.</p>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="tbl-cell image">
+                                              <img src="uploads/team-3.jpg" alt="">
+                                          </div>
+                                          <div class="tbl-cell content">
+                                              <a>Daniel Barnes</a>
+                                              <p>Manager at IT park.</p>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="tbl-cell image">
+                                              <img src="uploads/team-4.jpg" alt="">
+                                          </div>
+                                          <div class="tbl-cell content">
+                                              <a>Janet Collins</a>
+                                              <p>Developer at atios.</p>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="tab-pane" id="sidebar-setting">
+                          <div class="pl-2 pr-2">
+                              <div class="box-title pb-3">General Setting</div>
+                              <div class="setting-list">
+                                  <ul>
+                                      <li class="item">
+                                          <div class="label">Email Notifications</div>
+                                          <div class="control"><input type="checkbox" checked="" class="js-switch" data-color="#13dafe" data-switchery="true" style="display: none;"><span class="switchery switchery-default" style="background-color: rgb(19, 218, 254); border-color: rgb(19, 218, 254); box-shadow: rgb(19, 218, 254) 0px 0px 0px 0px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;"><small style="left: 20px; background-color: rgb(255, 255, 255); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span></div>
+                                      </li>
+                                      <li class="item">
+                                          <div class="label">Comment auto Publish</div>
+                                          <div class="control"><input type="checkbox" class="js-switch" data-color="#13dafe" data-switchery="true" style="display: none;"><span class="switchery switchery-default" style="box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset; border-color: rgb(223, 223, 223); background-color: rgb(255, 255, 255); transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s;"><small style="left: 0px; transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span></div>
+                                      </li>
+                                      <li class="item">
+                                          <div class="label">Review Auto Publish</div>
+                                          <div class="control"><input type="checkbox" checked="" class="js-switch" data-color="#13dafe" data-switchery="true" style="display: none;"><span class="switchery switchery-default" style="background-color: rgb(19, 218, 254); border-color: rgb(19, 218, 254); box-shadow: rgb(19, 218, 254) 0px 0px 0px 0px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;"><small style="left: 20px; background-color: rgb(255, 255, 255); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span></div>
+                                      </li>
+                                      <li class="item">
+                                          <div class="label">Post Setting</div>
+                                          <div class="control"><input type="checkbox" class="js-switch" data-color="#13dafe" data-switchery="true" style="display: none;"><span class="switchery switchery-default" style="box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset; border-color: rgb(223, 223, 223); background-color: rgb(255, 255, 255); transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s;"><small style="left: 0px; transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span></div>
+                                      </li>
+                                      <li class="item">
+                                          <div class="label">Cron Log</div>
+                                          <div class="control"><input type="checkbox" class="js-switch" data-color="#13dafe" data-switchery="true" style="display: none;"><span class="switchery switchery-default" style="box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset; border-color: rgb(223, 223, 223); background-color: rgb(255, 255, 255); transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s;"><small style="left: 0px; transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span></div>
+                                      </li>
+                                      <li class="item">
+                                          <div class="label">Email Log</div>
+                                          <div class="control"><input type="checkbox" checked="" class="js-switch" data-color="#13dafe" data-switchery="true" style="display: none;"><span class="switchery switchery-default" style="background-color: rgb(19, 218, 254); border-color: rgb(19, 218, 254); box-shadow: rgb(19, 218, 254) 0px 0px 0px 0px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;"><small style="left: 20px; background-color: rgb(255, 255, 255); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span></div>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="tab-pane" id="sidebar-log">
+                          <div class="pl-2 pr-2">
+                              <div class="box-title pb-3">Server and Application Logs</div>
+                              <ul class="timeline">
+                                  <li>
+                                      <div class="time"><small>Just Now</small></div>
+                                      <a href="#" target="_blank" class="timeline-container">
+                                          <div class="arrow"></div>
+                                          <div class="description">21 new users registered </div>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <div class="time"><small>11 mins</small></div>
+                                      <a href="#" target="_blank" class="timeline-container">
+                                          <div class="arrow"></div>
+                                          <div class="description">New invoice generated <span class="badge badge-danger badge-pill badge-sm">Unpaid</span></div>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <div class="time"><small>15 mins</small></div>
+                                      <a href="#" target="_blank" class="timeline-container">
+                                          <div class="arrow"></div>
+                                          <div class="description">Cron Job Completed</div>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <div class="time"><small>20 mins</small></div>
+                                      <a href="#" target="_blank" class="timeline-container">
+                                          <div class="arrow"></div>
+                                          <div class="description">Server Restarted <span class="badge badge-success badge-pill badge-sm">Resolved</span></div>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <div class="time"><small>25 mins</small></div>
+                                      <a href="#" target="_blank" class="timeline-container">
+                                          <div class="arrow"></div>
+                                          <div class="description">New order received</div>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <div class="time"><small>30 mins</small></div>
+                                      <a href="#" target="_blank" class="timeline-container">
+                                          <div class="arrow"></div>
+                                          <div class="description">New ticket created <span class="badge badge-warning badge-pill badge-sm">High</span></div>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <div class="time"><small>35 mins</small></div>
+                                      <a href="#" target="_blank" class="timeline-container">
+                                          <div class="arrow"></div>
+                                          <div class="description">Payment Made by client $350.</div>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div><!-- End Sidebar Section -->
+      </div>

@@ -1,0 +1,120 @@
+<form [formGroup]="registerationForm" (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="firstName"
+          placeholder="First Name"
+        />
+        <span
+          class="text-danger"
+          *ngIf="!firstName?.valid && (firstName?.touched || userSubmitted)"
+        >
+          Please provide first name
+        </span>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="lastName"
+          placeholder="Last Name"
+        />
+        <span
+          class="text-danger"
+          *ngIf="!lastName?.valid && (lastName?.touched || userSubmitted)"
+        >
+          Please provide last name
+        </span>
+      </div>
+    </div>
+
+    <div class="form-group col-12">
+      <input
+        type="text"
+        class="form-control"
+        formControlName="mobile"
+        placeholder="Mobile Number"
+      />
+      <span
+        class="text-danger"
+        *ngIf="!mobile?.valid && (mobile?.touched || userSubmitted)"
+      >
+        <span *ngIf="mobile.hasError('required')"> Please provide mobile </span>
+        <span *ngIf="mobile.errors?.minlength">
+          Mobile should not be lesser than 8 character
+        </span>
+      </span>
+      <span class="help-block whatsapp">Must have 10 digits</span>
+    </div>
+
+    <div class="form-group col-12">
+      <input
+        type="text"
+        class="form-control"
+        formControlName="email"
+        placeholder="Email Id"
+      />
+      <span
+        class="text-danger"
+        *ngIf="!email?.valid && (email?.touched || userSubmitted)"
+      >
+        <span *ngIf="email.hasError('required')">
+          Please provide email id
+        </span>
+        <span *ngIf="email.hasError('email')">
+          Please provide valid email id
+        </span>
+      </span>
+    </div>
+    <div class="form-group col-12">
+      <input
+        type="password"
+        class="form-control"
+        formControlName="password"
+        placeholder="Password"
+      />
+      <span
+        class="text-danger"
+        *ngIf="!password?.valid && (password?.touched || userSubmitted)"
+      >
+        <span *ngIf="password.hasError('required')">
+          Please provide password
+        </span>
+        <span *ngIf="password.errors?.minlength">
+          Password should not be lesser than 8 character
+        </span>
+      </span>
+    </div>
+
+    <span class="help-block">
+      <ul>
+        <li>Atleast 8 characters</li>
+        <li>Atleast 1 UPPERCASE character</li>
+        <li>Atleast 1 lowercase character</li>
+        <li>Atleast 1 number</li>
+      </ul>
+    </span>
+  </div>
+  <div class="col-md-12 text-center">
+    <p class="terms d-inline">By clicking on Sign Up, you agree to our</p>
+    <p class="terms d-inline">
+      <a class="terms-conditions" href=""><u>Terms of Use</u></a>
+    </p>
+    <p class="terms d-inline">and our</p>
+    <p class="terms d-inline">
+      <a class="terms-conditions" href=""><u>Privacy Policy</u></a>
+    </p>
+    <div class="col-md-12 mb-3">
+      <p class="text-center">
+        <button type="submit" class="btn signup-btn btn-primary">
+          Sign up
+        </button>
+      </p>
+    </div>
+  </div>
+</form>

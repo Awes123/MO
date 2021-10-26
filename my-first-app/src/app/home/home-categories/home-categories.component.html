@@ -1,0 +1,71 @@
+<swiper
+  [slidesPerView]="1"
+  [spaceBetween]="10"
+  [breakpoints]="{
+    '320': {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    '480': {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    '640': {
+      slidesPerView: 2,
+      spaceBetween: 120
+    },
+    '768': {
+      slidesPerView: 3,
+      spaceBetween: 250
+    },
+    '900': {
+      slidesPerView: 3,
+      spaceBetween: 250
+    },
+    '1024': {
+      slidesPerView: 4,
+      spaceBetween: 300
+    },
+    '1200': {
+      slidesPerView: 4,
+      spaceBetween: 160
+    },
+    '1440': {
+      slidesPerView: 5,
+      spaceBetween: 270
+    }
+  }"
+  [freeMode]="true"
+  [pagination]="{
+    clickable: true
+  }"
+  class="mySwiper d-flex"
+>
+  <ng-template *ngFor="let cat of list" swiperSlide
+    ><div
+      class="
+        product__box product__box--catagory product__box--border
+        swiper-slide
+        text-center
+        catbox
+        swiper-slide-active
+      "
+    >
+      <div class="product__img-box">
+        <a href="/Collection/Sunglasses" class="product__img--link">
+          <img
+            src="assets/images/sunglasses.JPG"
+            class="img-fluid"
+            alt="Sunglasses"
+          />
+        </a>
+        <a
+          href="/Collection/Sunglasses"
+          class="product__link product__link--weight-regular m-t-30"
+        >
+          Sunglasses
+        </a>
+      </div>
+    </div></ng-template
+  >
+</swiper>

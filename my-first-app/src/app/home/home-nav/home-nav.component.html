@@ -1,0 +1,716 @@
+<header>
+  <!-- ::::::  Start Large Header Section  ::::::  -->
+  <div class="header header--1">
+    <!-- Start Header Top area -->
+    <div class="header__top header__top--style-1 hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header__top-content">
+              <div class="header__top-content--left">
+                <div class="contact_cms">
+                  <span class="cms1">Telephone Enquiry: </span>
+                  <span class="cms2"></span>
+                </div>
+              </div>
+              <div class="header__top-content--right hidden d-none">
+                <div class="user-info user-set-role">
+                  <a
+                    class="user-set-role__button"
+                    href="#"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    >Setting <i class="fal fa-chevron-down"></i
+                  ></a>
+                  <ul class="expand-dropdown-menu dropdown-menu">
+                    <li><a href="">My account</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Header Top area -->
+    <!-- Start Header Middle area -->
+    <div class="header__middle header__top--style-1 p-tb-30">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div class="header__logo">
+              <a href="/" class="header__logo-link">
+                <img src="assets/images/Mo.png" class="img-fluid width45" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <form
+                  class="header__search-form"
+                  method="post"
+                  action="/Home/SearchData"
+                >
+                  <div class="header__search-input">
+                    <input
+                      type="search"
+                      placeholder="Enter your search key"
+                      name="keyword"
+                      required=""
+                    />
+                    <button
+                      class="
+                        btn btn--submit btn--blue btn--uppercase btn--weight
+                        btnSearch
+                      "
+                    >
+                      Search
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-4">
+                <div class="header__wishlist-box">
+                  <!-- Start Header Wishlist Box -->
+
+                  <div class="header__wishlist pos-relative">
+                    <a href="/WishList" class="header__wishlist-link">
+                      <i class="far fa-heart"></i>
+                      <span
+                        class="wishlist-item-count wishlist-count pos-absolute"
+                        >1</span
+                      >
+                    </a>
+                  </div>
+                  <!-- End Header Wishlist Box -->
+                  <!-- Start Header Add Cart Box -->
+                  <div class="header-add-cart pos-relative m-l-40">
+                    <a href="/Cart" class="header__wishlist-link">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span
+                        class="
+                          wishlist-item-count
+                          cart-count
+                          pos-absolute
+                          hidden
+                        "
+                        >0</span
+                      >
+                    </a>
+                  </div>
+                  <div class="header__wishlist pos-relative m-l-40 logincon position-relative">
+                    <a
+                      class="header__wishlist-link"
+                      (click)="open('login')"
+                      *ngIf="!loggedIn()"
+                    >
+                      <i class="far fa-user"></i>
+                    </a>
+                    <a
+                    class="header__wishlist-link"
+                    (click)="logoutmenu=!logoutmenu"
+                    *ngIf="loggedIn()"
+                  >
+                    <i class="far fa-user"></i>
+                  </a>
+
+                  <ul class="list-group logoutmenu" *ngIf="logoutmenu">
+                  <li class="list-group-item">
+                    <a ><i class="far fa-user me-2"></i>My Account</a>
+                  </li>
+                  <li class="list-group-item pointer" (click)="onLogout()">
+                    <a ><i class="far fa-lock me-2"></i>Logout</a>
+                  </li>
+                  </ul>
+                  </div>
+                  <!-- End Header Add Cart Box -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Header Middle area -->
+    <!-- Start Header Menu Area -->
+
+    <div class="header-menu">
+      <div class="container">
+        <div class="row col-12">
+          <nav>
+            <ul class="header__nav">
+              <li class="header__nav-item pos-relative">
+                <a href="/Collection/Eyeglasses" class="header__nav-link">
+                  Eyeglasses
+                </a>
+                <!-- Megamenu Menu-->
+                <!-- Megamenu Menu-->
+              </li>
+              <li class="header__nav-item pos-relative">
+                <a
+                  href="/Collection/Sunglasses-And-Powered-Sunglasses"
+                  class="header__nav-link"
+                >
+                  Sunglasses And Powered Sunglasses
+                </a>
+                <!-- Megamenu Menu-->
+                <!-- Megamenu Menu-->
+              </li>
+              <li class="header__nav-item pos-relative">
+                <a href="/Collection/Reading-Glasses" class="header__nav-link">
+                  Reading Glasses
+                </a>
+                <!-- Megamenu Menu-->
+                <!-- Megamenu Menu-->
+              </li>
+              <li class="header__nav-item pos-relative">
+                <a href="/Collection/Computer-Glasses" class="header__nav-link">
+                  Computer Glasses
+                </a>
+                <!-- Megamenu Menu-->
+                <!-- Megamenu Menu-->
+              </li>
+              <li class="header__nav-item pos-relative">
+                <a href="/Collection/Face-shield" class="header__nav-link">
+                  Face shield
+
+                  <i class="icon-chevron-down"></i>
+                </a>
+                <!-- Megamenu Menu-->
+                <ul class="mega-menu pos-absolute p-0">
+                  <li class="mega-menu__box">
+                    <!--Single Megamenu Item Menu-->
+                    <div
+                      class="
+                        mega-menu__item-box
+                        col-lg-3 col-md-3 col-sm-3 col-xs-3
+                        p-2
+                        pl-3
+                        bg-light
+                        border-right
+                        mr-0
+                      "
+                    >
+                      <span class="mega-menu__title">Gender</span>
+                      <ul class="mega-menu__item">
+                        <li class="mega-menu__list">
+                          <a
+                            href="/Collection/Face-shield?Keyword=Unisex&amp;num=1"
+                            class="mega-menu__link"
+                            typeof="4"
+                            >Unisex</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!--Single Megamenu Item Menu-->
+                    <!--Single Megamenu Item Menu-->
+                    <div
+                      class="
+                        mega-menu__item-box
+                        col-lg-3 col-md-3 col-sm-3 col-xs-3
+                        p-2
+                        pl-3
+                        bg-light
+                        border-right
+                        mr-0
+                      "
+                    >
+                      <span class="mega-menu__title">Collection</span>
+                      <ul class="mega-menu__item">
+                        <li class="mega-menu__list">
+                          <a
+                            href="/Home/SearchData?keyword=Face shield&amp;Id=36"
+                            class="mega-menu__link"
+                            typeof="36"
+                            >Face shield</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!--Single Megamenu Item Menu-->
+                    <!--Single Megamenu Item Menu-->
+                    <div
+                      class="
+                        mega-menu__item-box
+                        col-lg-3 col-md-3 col-sm-3 col-xs-3
+                        p-2
+                        pl-3
+                        bg-light
+                        border-right
+                        mr-0
+                      "
+                    >
+                      <span class="mega-menu__title">Style</span>
+                      <ul class="mega-menu__item">
+                        <li class="mega-menu__list">
+                          <a
+                            href="/Collection/Face-shield?Keyword=Full Rim&amp;num=1"
+                            class="mega-menu__link"
+                            typeof="0"
+                            >Full Rim</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="
+                        mega-menu__item-box
+                        col-lg-3 col-md-3 col-sm-3 col-xs-3
+                        p-2
+                        pl-3
+                        bg-light
+                        border-right
+                        mr-0
+                      "
+                    >
+                      <span class="mega-menu__title">Shape</span>
+                      <ul class="mega-menu__item">
+                        <li class="mega-menu__list">
+                          <a
+                            href="/Collection/Face-shield?Keyword=Full Face&amp;num=1"
+                            class="mega-menu__link"
+                            typeof="36"
+                            >Full Face</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!--Single Megamenu Item Menu-->
+                  </li>
+                </ul>
+                <!-- Megamenu Menu-->
+              </li>
+
+              <li class="header__nav-item pos-relative">
+                <a href="/contact-lenses" class="header__nav-link"
+                  >Contact Lens</a
+                >
+              </li>
+              <li class="header__nav-item pos-relative">
+                <a href="/contactus" class="header__nav-link">Contact Us</a>
+              </li>
+              <!-- End Single Nav link-->
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- End Header Menu Area -->
+  </div>
+  <!-- ::::::  End Large Header Section  ::::::  -->
+  <!-- ::::::  Start Mobile Header Section  ::::::  -->
+  <div class="header__mobile mobile-header--1">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <!-- Start Header Mobile Top area -->
+          <div class="header__mobile-top">
+            <div class="mobile-header__logo">
+              <a href="/" class="mobile-header__logo-link">
+                <img src="assets/images/Mo.png" class="img-fluid width45" />
+              </a>
+            </div>
+            <div class="header__wishlist-box">
+              <!-- Start Header Wishlist Box -->
+              <div class="header__wishlist pos-relative">
+                <a href="/WishList" class="header__wishlist-link">
+                  <i class="icon-heart"></i>
+                  <span class="wishlist-item-count wishlist-count pos-absolute"
+                    >1</span
+                  >
+                </a>
+              </div>
+              <!-- End Header Wishlist Box -->
+              <!-- Start Header Add Cart Box -->
+              <div class="header-add-cart pos-relative m-l-20">
+                <a href="/Cart" class="header__wishlist-link">
+                  <i class="icon-shopping-cart"></i>
+                  <span
+                    class="wishlist-item-count cart-count pos-absolute hidden"
+                    >0</span
+                  >
+                </a>
+              </div>
+              <!-- End Header Add Cart Box -->
+              <div class="header-add-cart pos-relative m-l-20 logincon">
+                <a
+                  href="javascript:void(0)"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                  class="header__wishlist-link"
+                >
+                  <i class="icon-user"></i>
+                </a>
+              </div>
+              <a href="#offcanvas-mobile-menu" class="offcanvas-toggle m-l-20"
+                ><i class="icon-menu"></i
+              ></a>
+            </div>
+          </div>
+          <!-- End Header Mobile Top area -->
+          <!-- Start Header Mobile Middle area -->
+          <div class="header__mobile-middle header__top--style-1 p-tb-10">
+            <form
+              class="header__search-form"
+              method="post"
+              action="/Home/SearchData"
+            >
+              <div class="header__search-input header__search-input--mobile">
+                <input
+                  type="search"
+                  placeholder="Enter your search"
+                  name="keyword"
+                  required=""
+                />
+                <button
+                  class="
+                    btn btn--submit btn--blue btn--uppercase btn--weight
+                    btnSearch
+                  "
+                  type="submit"
+                >
+                  <i class="fal fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- End Header Mobile Middle area -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ::::::  Start Mobile Header Section  ::::::  -->
+  <!-- ::::::  Start Mobile-offcanvas Menu Section  copy ::::::  -->
+
+  <div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu">
+    <button class="offcanvas__close offcanvas-close">×</button>
+    <div class="offcanvas-inner">
+      <div class="offcanvas-menu m-b-30">
+        <h4>Menu</h4>
+        <ul>
+          <li>
+            <a href="/Collection/Eyeglasses"><span>Eyeglasses</span></a>
+          </li>
+          <li>
+            <a href="/Collection/Sunglasses And Powered Sunglasses"
+              ><span>Sunglasses And Powered Sunglasses</span></a
+            >
+          </li>
+          <li>
+            <a href="/Collection/Reading Glasses"
+              ><span>Reading Glasses</span></a
+            >
+          </li>
+          <li>
+            <a href="/Collection/Computer Glasses"
+              ><span>Computer Glasses</span></a
+            >
+          </li>
+          <li>
+            <span class="offcanvas__menu-expand"></span>
+            <a href="/Collection/Face shield"><span>Face shield</span></a>
+            <ul class="sub-menu">
+              <li>
+                <span class="offcanvas__menu-expand"></span>
+                <a href="#">Gender</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="/Collection/Face shield/Men" typeof="1">Men</a>
+                  </li>
+                  <li>
+                    <a href="/Collection/Face shield/Women" typeof="2">Women</a>
+                  </li>
+                  <li>
+                    <a href="/Collection/Face shield/Kids" typeof="3">Kids</a>
+                  </li>
+                  <li>
+                    <a href="/Collection/Face shield/Unisex" typeof="4"
+                      >Unisex</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="sub-menu">
+              <li>
+                <span class="offcanvas__menu-expand"></span>
+                <a href="#">Collection</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Economy Eyeglasses&amp;Id=36"
+                      typeof="4"
+                      >Economy Eyeglasses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Kids Eyewear&amp;Id=36"
+                      typeof="5"
+                      >Kids Eyewear</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Men Sunglasses&amp;Id=36"
+                      typeof="6"
+                      >Men Sunglasses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Women Sunglasses&amp;Id=36"
+                      typeof="10"
+                      >Women Sunglasses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Contact Lens&amp;Id=36"
+                      typeof="12"
+                      >Contact Lens</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Premium Eyeglasses &amp;Id=36"
+                      typeof="13"
+                      >Premium Eyeglasses
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Metal Eyeglasses&amp;Id=36"
+                      typeof="14"
+                      >Metal Eyeglasses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Rimless Eyeglasses&amp;Id=36"
+                      typeof="15"
+                      >Rimless Eyeglasses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Enviable Ellipse&amp;Id=36"
+                      typeof="16"
+                      >Enviable Ellipse</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Fabulous Feline &amp;Id=36"
+                      typeof="17"
+                      >Fabulous Feline
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Flexible Eyeglasses&amp;Id=36"
+                      typeof="20"
+                      >Flexible Eyeglasses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Clubmaster&amp;Id=36"
+                      typeof="21"
+                      >Clubmaster</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Men Eyewear&amp;Id=36"
+                      typeof="22"
+                      >Men Eyewear</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Computer Glasses Free Lens&amp;Id=36"
+                      typeof="23"
+                      >Computer Glasses Free Lens</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Clip On &amp;Id=36"
+                      typeof="25"
+                      >Clip On
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Progressive Reading Glasses&amp;Id=36"
+                      typeof="27"
+                      >Progressive Reading Glasses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Men In Black&amp;Id=36"
+                      typeof="28"
+                      >Men In Black</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Women Eyewear&amp;Id=36"
+                      typeof="30"
+                      >Women Eyewear</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=New Sunglasses&amp;Id=36"
+                      typeof="31"
+                      >New Sunglasses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Anti Fog Wipes&amp;Id=36"
+                      typeof="33"
+                      >Anti Fog Wipes</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Florid&amp;Id=36"
+                      typeof="34"
+                      >Florid</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Monsoon collection&amp;Id=36"
+                      typeof="35"
+                      >Monsoon collection</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Home/SearchData?keyword=Face shield&amp;Id=36"
+                      typeof="37"
+                      >Face shield</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="sub-menu">
+              <li>
+                <span class="offcanvas__menu-expand"></span>
+                <a href="#">Style</a>
+                <ul class="sub-menu"></ul>
+              </li>
+            </ul>
+            <ul class="sub-menu">
+              <li>
+                <span class="offcanvas__menu-expand"></span>
+                <a href="#">Shape</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="/Collection/Face shield/Full Face" typeof="36"
+                      >Full Face</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/contact-lenses">Contact Lens</a></li>
+
+          <li><a href="/contactus">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="offcanvas-buttons m-b-30">
+        <a href="/MyAccount/Index" class="user"><i class="icon-user"></i></a>
+        <a href="/WishList"><i class="icon-heart"></i></a>
+        <a href="/Cart"><i class="icon-shopping-cart"></i></a>
+      </div>
+      <div class="offcanvas-social">
+        <span>Stay With Us</span>
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ::::::  End Mobile-offcanvas Menu Section  ::::::  -->
+  <!-- ::::::  Start Popup Add Cart ::::::  -->
+
+  <div class="offcanvas-overlay"></div>
+</header>
+
+<div class="custom-Modal" *ngIf="modal">
+  <div class="row">
+    <h5
+    class="col-11 text-center modal-title pt-4"
+    id="exampleModalLabel"
+    *ngIf="!signinFormDiv"
+  >
+    Sign up
+
+  </h5>
+  <h5
+  class="col-11 text-center modal-title pt-4"
+  id="exampleModalLabel"
+      *ngIf="signinFormDiv"
+    >
+      Log in
+    </h5>
+  <div class="col-1 ps-4 pt-4">
+    <i class="fa fa-times pointer" (click)="close()"></i>
+  </div>
+  </div>
+  <div class="modal-body">
+
+
+    <div *ngIf="signupFormDiv">
+      <app-user-register
+        [userRole]="userRole"
+        (close)="close()"
+      ></app-user-register>
+    </div>
+    <div *ngIf="signinFormDiv">
+      <app-user-login  (close)="close()"></app-user-login>
+    </div>
+    <div class="logged-in text-center col-md-12 my-4" *ngIf="!signinFormDiv">
+      <p class="account-logged d-inline">Already have an account?</p>
+      <a
+        href="#exampleModalToggle2"
+        data-bs-toggle="modal"
+        data-bs-dismiss="modal"
+      >
+        <p class="log-in d-inline" (click)="openLoginForm()">Log in</p>
+      </a>
+    </div>
+    <div class="logged-in text-center col-md-12 my-4" *ngIf="signinFormDiv">
+      <p class="account-logged d-inline">Don't have an account?</p>
+      <a
+        href="#exampleModalToggle2"
+        data-bs-toggle="modal"
+        data-bs-dismiss="modal"
+      >
+        <p class="log-in d-inline" (click)="btnOpenSignup()">Sign up</p>
+      </a>
+    </div>
+  </div>
+</div>

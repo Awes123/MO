@@ -1,0 +1,208 @@
+@import '../../../styles.css';
+@import '../home-page/home-page.component.css';
+.company-name {
+  font-family: Cabin Sketch;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #270047;
+  padding: 1.5%!important;
+}
+
+a {
+  text-decoration: none;
+}
+
+#login {
+  background-color: transparent!important;
+  font-family: Inter!important;
+  font-style: normal!important;
+  font-weight: 500!important;
+  font-size: 14px!important;
+  line-height: 17px!important;
+  color: #0063d1!important;
+}
+
+.width10 {
+  width: 10% !important;
+}
+
+.nav-item {
+  width: 70%!important;
+}
+
+.signupborder {
+  width: 210px;
+  height: 172px;
+  border: 1px solid #686868;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 16px;
+}
+
+.btn-purple {
+  background-color: #0063d1!important;
+  color: white!important;
+  text-transform: uppercase;
+  vertical-align: bottom;
+  border: 0;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+  font-weight: 500;
+  padding: .625rem 1.5rem .5rem;
+  font-size: .75rem;
+  line-height: 1.5;
+}
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.home-nav {
+  box-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%);
+  padding-top: .5625rem;
+  background-color: #ffffff;
+}
+
+h5.modal-title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0063d1;
+}
+
+.logoutmenu {
+  position: absolute;
+  right: 0px;
+  width: 150px;
+  top: 26px;
+  z-index: 100000;
+}
+
+.btn-outline-secondary {
+  font-family: Inter!important;
+  font-style: normal!important;
+  font-weight: normal;
+  font-size: 90%!important;
+  letter-spacing: 0.15px!important;
+  color: #292929!important;
+  width: 60%;
+}
+
+.login-or {
+  position: relative;
+  color: #686868;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hr-or {
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 3px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #686868;
+}
+
+button.signup-btn {
+  background-color: #0063d1!important;
+  font-family: Inter!important;
+  font-style: normal!important;
+  font-weight: normal;
+  font-size: 90%!important;
+  letter-spacing: 0.15px!important;
+  color: white!important;
+}
+
+.account-logged {
+  font-family: Inter!important;
+  font-style: normal!important;
+  font-weight: normal;
+  font-size: 90%!important;
+  letter-spacing: 0.15px!important;
+  color: #686868!important;
+}
+
+.social-media {
+  margin-right: 4%;
+}
+
+.card-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #686868;
+}
+
+.card-title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #686868 !important;
+}
+
+.card-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #686868 !important;
+}
+
+.signupborder:hover {
+  border: 2px solid #0063d1 !important;
+}
+
+.log-in {
+  font-family: Inter!important;
+  font-style: normal!important;
+  font-weight: bold;
+  font-size: 90%!important;
+  letter-spacing: 0.15px!important;
+  color: #0063d1!important;
+}
+
+.myCustomModalClass .modal-dialog {
+  max-width: 546px !important;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 546px !important;
+  }
+  .myCustomModalClass .modal-dialog {
+    max-width: 546px !important;
+  }
+}

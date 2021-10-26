@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+body * {
+  transition: background-size 1s ease-in-out;
+  transition: border 1s ease-in-out;
+  transition: padding 1s ease-in-out;
+  font-family: "KoHo", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.ml-30p {
+  margin-left: 30% !important;
+}
+
+.max100p {
+  max-width: 100% !important;
+}
+
+.right-0 {
+  right: 0px !important;
+}
+
+.overflowhidden {
+  overflow-x: hidden;
+}
+
+.top-0 {
+  top: 0px !important;
+}
+
+.positionrelabso {
+  position: absolute;
+  top: 37px;
+  z-index: 10;
+  width: 80%;
+}
+
+.preloader {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  z-index: 100;
+  background-image: linear-gradient(45deg, #1447b3, #2b8ffc);
+  text-align: center;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+table thead>tr>th {
+  text-align: left !important;
+}
+
+.swiper-wrapper {
+  transform: translate3d(0px, 0px, 0px) !important;
+  transition-duration: 0ms !important;
+}
+
+.Anitglare {
+  padding-top: 80px;
+  min-height: 260px;
+  font-weight: bold;
+  display: block;
+}
+
+.font-40 {
+  font-size: 40px !important;
+}
+
+.catbox {
+  width: 198px !important;
+  margin-right: 30px !important;
+}
+
+.transition-duration1500 {
+  transition-duration: 1500ms !important;
+}
+
+.rounded {
+  border-radius: .75rem !important;
+}
+
+.gradientBlue {
+  background: linear-gradient(180deg, #1447b3, #2b8ffc) !important;
+}
+
+.mapHeight {
+  height: 506px !important;
+}
+
+.font-90 {
+  font-size: 90px !important;
+}
+
+.width10 {
+  width: 10% !important;
+}
+
+.contactimg {
+  max-width: 190px !important;
+  height: 115px !important;
+}
+
+.zoom {
+  transition: transform 2s;
+  margin: 0 auto;
+}
+
+.product__review--blank {
+  color: #bfbcbc !important;
+}
+
+.text-deco-none {
+  text-decoration: none !important;
+}
+
+.product__review--fill {
+  color: #fddf07 !important;
+}
+
+.contactlenbox {
+  width: 112.5px !important;
+  margin-right: 10px !important;
+}
+
+.cursorpointer {
+  cursor: pointer !important;
+}
+
+.left0 {
+  left: 0px !important;
+}
+
+.width45 {
+  width: 45% !important;
+}
+
+.width30 {
+  width: 30% !important;
+}
+
+.width34 {
+  width: 34% !important;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "KoHo", sans-serif;
+}
+
+/* Set padding to keep content from hitting the edges */
+
+.body-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.font-20 {
+  font-size: 20px !important;
+}
+
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.text-black {
+  color: #000;
+}
+
+.btnHelp {
+  position: fixed;
+  left: 10px;
+  bottom: 80px;
+  color: #0063d1 !important;
+  z-index: 20 !important;
+  background-color: whitesmoke !important;
+  border-radius: 70px !important;
+}
+
+.btnWhatsapp {
+  position: fixed;
+  right: 10px;
+  bottom: 80px;
+  color: #25d366 !important;
+  z-index: 20 !important;
+  background-color: whitesmoke !important;
+  border-radius: 70px !important;
+}
+
+.test {
+  margin-left: 0px !important;
+  top: 5px !important;
+  position: fixed !important;
+  left: 50px !important;
+  bottom: 80px;
+  margin: .5rem;
+  pointer-events: none;
+}
+
+/*@media screen and (min-width: 768px) {
+    .test, .modal-dialog {
+        width: 30% !important;
+    }
+}*/
+
+@media (min-width: 1200px) {
+  .test {
+    min-width: 300px !important;
+  }
+}
+
+/*.no-ripple {
+    --ripple-color: transparent;
+}*/

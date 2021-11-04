@@ -25,28 +25,32 @@ import { ProductLensFormComponent } from './Components/product-lens-form/product
 import { ProductLensFeatureFormComponent } from './Components/product-lens-feature-form/product-lens-feature-form.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AlertifyService } from '../services/alertify.service';
+import { CategoryFormComponent } from './Components/category-form/category-form.component';
+import { SharedModule } from '../shared/shared.module';
 const adminRoutes: Routes = [
-  { path: '', component: AdminModuleComponent,
-    children:[
-      {path: 'dashboard', component: DashboardComponent },
-      {path:'categories',component:CategoriesComponent },
-      {path:'genders',component:GendersComponent },
-      {path:'charges',component:DeliveryChargesComponent },
-      {path:'products',component:ProductsComponent },
-      {path:'outofStock',component:ProdutsOutofstockComponent },
-      {path:'review',component:ReviewComponent },
-      {path:'banners',component:BannerComponent },
-      {path:'queries',component:QueryComponent },
-      {path:'lenses',component:ProductLensComponent },
-      {path:'contactlens',component:ContactLensComponent },
-      {path:'incart',component:ProdutsInCartsComponent },
+  {
+    path: '', component: AdminModuleComponent,
+    children: [
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'categories', component: CategoriesComponent },
+      { path: 'genders', component: GendersComponent },
+      { path: 'charges', component: DeliveryChargesComponent },
+      { path: 'products', component: ProductsComponent },
+      { path: 'outofStock', component: ProdutsOutofstockComponent },
+      { path: 'review', component: ReviewComponent },
+      { path: 'banners', component: BannerComponent },
+      { path: 'queries', component: QueryComponent },
+      { path: 'lenses', component: ProductLensComponent },
+      { path: 'contactlens', component: ContactLensComponent },
+      { path: 'incart', component: ProdutsInCartsComponent },
 
     ]
-},
+  },
 ]
 @NgModule({
   imports: [CommonModule,
-    RouterModule.forChild(adminRoutes),],
+    RouterModule.forChild(adminRoutes),
+    SharedModule],
   declarations: [
     AdminModuleComponent,
     DashboardComponent,
@@ -71,10 +75,11 @@ const adminRoutes: Routes = [
     ProductLensFeatureComponent,
     ProductLensFormComponent,
     ProductLensFeatureFormComponent,
+    CategoryFormComponent,
   ],
-  providers:[
+  providers: [
 
     AlertifyService
   ]
 })
-export class AdminModuleModule {}
+export class AdminModuleModule { }

@@ -1,1 +1,69 @@
-<p>categories works!</p>
+<div class="page-body">
+  <app-category-form *ngIf="categoryForm"></app-category-form>
+  <div class="card mt-5 p-3" *ngIf="!categoryForm">
+    <h4 class="card-title">Categories</h4>
+    <div class="card-body">
+      <table class="table table-responsive">
+        <tbody>
+          <tr>
+            <th>
+              Sr
+            </th>
+            <th>
+              Type
+            </th>
+            <th>
+              Category
+            </th>
+            <th>
+              Disabled
+            </th>
+            <th>
+              Image
+            </th>
+            <th>
+              Thumbnail
+            </th>
+
+            <th>
+              Date
+            </th>
+            <th>Changed By</th>
+            <th><button class="btn bg-primary text-white" (click)="categoryForm=!categoryForm">Add</button></th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+              homeCategory
+            </td>
+            <td>
+              Monsoon collection
+            </td>
+            <td>
+              No
+            </td>
+            <td>
+              <img src="/Admin/categories/show/35?banner=banner" width="80">
+            </td>
+            <td>
+              <img src="/Admin/categories/show/35?banner=thumbnail" width="80">
+            </td>
+            <td>
+              6/8/2021 2:22:55 PM </td>
+            <td>
+              Ahmed </td>
+            <td>
+              <a href="/Admin/categories/Create?id=35" class="btn bg-warning btn-sm text-white"><i
+                  class="fa fa-pencil-alt"></i></a>
+              <a href="/Admin/categories/Delete?id=35" class="btn bg-danger btn-sm text-white"><i
+                  class="fa fa-trash-alt"></i></a>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+</div>

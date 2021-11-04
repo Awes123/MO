@@ -5,7 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HousingService } from './services/housing.service';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
 import { AlertifyService } from './services/alertify.service';
@@ -29,16 +28,23 @@ import { HomeProductsContainerComponent } from './home/home-products-container/h
 import { HomeProductsItemComponent } from './home/home-products-item/home-products-item.component';
 import { HomeProductsNewarrivalComponent } from './home/home-products-newarrival/home-products-newarrival.component';
 import { HomeProductsBestsellerComponent } from './home/home-products-bestseller/home-products-bestseller.component';
+import { SharedModule } from './shared/shared.module';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'user/login', component: UserLoginComponent },
   { path: 'user/register', component: UserRegisterComponent },
   { path: 'SignIn', component: UserLoginComponent },
   { path: 'SignUp', component: UserRegisterComponent },
-  {  path: 'admin',
-  loadChildren: () =>
-    import('./Admin-Module/Admin-Module.module').then((m) => m.AdminModuleModule),}
-,
+  {
+    path: 'admin',
+    loadChildren: () =>
+      import('./Admin-Module/Admin-Module.module').then((m) => m.AdminModuleModule),
+  }
+  ,
   { path: '**', component: HomePageComponent },
 ];
 
@@ -61,8 +67,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
+    SharedModule,
     HttpClientModule,
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
@@ -73,6 +78,22 @@ const appRoutes: Routes = [
     NgxGalleryModule,
     NgbModule,
     SwiperModule,
+    AngularFireModule.initializeApp({
+      apiKey: "AIzaSyDOzh5FY_blkO9Bxiw0L_coZtd3SE2X640",
+      authDomain: "minhajoptical-51791.firebaseapp.com",
+      databaseURL: "https://minhajoptical-51791.firebaseio.com",
+      projectId: "minhajoptical-51791",
+      storageBucket: "minhajoptical-51791.appspot.com",
+      messagingSenderId: "962519274663",
+      appId: "1:962519274663:web:b3629d048ed06d1cd9f782"
+    }),
+    AngularFireStorageModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
   ],
   providers: [
     {
@@ -86,4 +107,4 @@ const appRoutes: Routes = [
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

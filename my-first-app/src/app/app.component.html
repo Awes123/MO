@@ -1,9 +1,11 @@
-<app-home-nav  *ngIf="role!='1'"></app-home-nav>
+<app-home-nav *ngIf="role!='1'"></app-home-nav>
 <!-- *ngIf="!loggedIn()" -->
 <!-- <app-navbar-main *ngIf="loggedIn()"></app-navbar-main> -->
 
 <div class="loading-overlay" *ngIf="loading">
-  <p><ngb-progressbar [value]="1000"></ngb-progressbar></p>
+  <p>
+    <ngb-progressbar [value]="1000"></ngb-progressbar>
+  </p>
 </div>
 <div *ngIf="!loading">
   <div class="">
@@ -13,54 +15,68 @@
 
 <footer class="footer" *ngIf="role!='1'">
   <div class="footer__top gray-bg pt-5 pb-5">
-      <div class="container">
-          <div class="row">
-              <div class="col-xl-6 col-lg-5 col-12">
-                  <div class="footer__about">
-                      <div class="footer__logo text-center">
-                          <a href="/" class="footer__logo-link">
-                              <img src="assets/images/Mo.png" class="img-fluid width30">
-                          </a>
-                      </div>
-                      <div class="footer__text">
-                          <p class="text-justify p-2 pl-4 pr-4">Since 1982, We are the most trusted and loved Optical store in Aurangabad, Maharashtra. We have more than 1 million satisfied customer and with there best wishes we are now aiming to provide our quality products and services allover India. To be a part of this massive family of digital INDIA and its diverse range customers we are not going to compromise in any manner.</p>
-                      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-5 col-12">
+          <div class="footer__about">
+            <div class="footer__logo text-center">
+              <a href="/" class="footer__logo-link">
+                <img src="assets/images/Mo.png" class="img-fluid width30">
+              </a>
+            </div>
+            <div class="footer__text">
+              <p class="text-justify p-2 pl-4 pr-4">Since 1982, We are the most trusted and loved Optical store in
+                Aurangabad, Maharashtra. We have more than 1 million satisfied customer and with there best wishes we
+                are now aiming to provide our quality products and services allover India. To be a part of this massive
+                family of digital INDIA and its diverse range customers we are not going to compromise in any manner.
+              </p>
+            </div>
 
-                  </div>
-              </div>
-              <div class="col-xl-2 col-lg-3 col-sm-6 col-12">
-                  <div class="footer__menu">
-                      <h4 class="footer__nav-title">Products</h4>
-                      <ul class="footer__nav">
-                          <li class="footer__list">
-                              <a href="/Home/TermsCondition" class="footer__link">Terms &amp; Conditions</a>
-                          </li>
-                          <li class="footer__list">
-                              <a href="/Home/Returnpolicy" class="footer__link">Return policy</a>
-                          </li>
-                          <li class="footer__list"><a href="/Home/Useofcontent" class="footer__link">Use of content</a></li>
-                          <li class="footer__list"><a href="/contactus" class="footer__link">Contact us</a></li>
-
-                      </ul>
-                  </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-12">
-                  <div class="footer__menu">
-                      <h4 class="footer__nav-title">We Accepts</h4>
-                      <img src="/assets/img/company-logo/visa.png" alt="" class="footer__payment-img width34">
-                      <ul class="footer__social-nav">
-                          <li class="footer__social-list"><a href="https://www.facebook.com/Minhajoptical/" class="footer__social-link"><i class="fab fa-facebook-f"></i></a></li>
-                          <li class="footer__social-list d-none"><a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a></li>
-                          <li class="footer__social-list d-none"><a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a></li>
-                          <li class="footer__social-list  d-none"><a href="#" class="footer__social-link"><i class="fab fa-google-plus-g"></i></a></li>
-                          <li class="footer__social-list"><a href="https://www.instagram.com/invites/contact/?i=1fods0czas7se&amp;utm_content=k5wffl8." class="footer__social-link"><i class="fab fa-instagram"></i></a></li>
-                      </ul>
-                  </div>
-
-              </div>
           </div>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-sm-6 col-12">
+          <div class="footer__menu">
+            <h4 class="footer__nav-title">Products</h4>
+            <ul class="footer__nav">
+              <li class="footer__list">
+                <a href="/Home/TermsCondition" class="footer__link">Terms &amp; Conditions</a>
+              </li>
+              <li class="footer__list">
+                <a href="/Home/Returnpolicy" class="footer__link">Return policy</a>
+              </li>
+              <li class="footer__list"><a href="/Home/Useofcontent" class="footer__link">Use of content</a></li>
+              <li class="footer__list"><a href="/contactus" class="footer__link">Contact us</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-12">
+          <div class="footer__menu">
+            <h4 class="footer__nav-title">We Accepts</h4>
+            <img src="/assets/img/company-logo/visa.png" alt="" class="footer__payment-img width34">
+            <ul class="footer__social-nav">
+              <li class="footer__social-list"><a href="https://www.facebook.com/Minhajoptical/"
+                  class="footer__social-link"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="footer__social-list d-none"><a href="#" class="footer__social-link"><i
+                    class="fab fa-twitter"></i></a></li>
+              <li class="footer__social-list d-none"><a href="#" class="footer__social-link"><i
+                    class="fab fa-youtube"></i></a></li>
+              <li class="footer__social-list  d-none"><a href="#" class="footer__social-link"><i
+                    class="fab fa-google-plus-g"></i></a></li>
+              <li class="footer__social-list"><a
+                  href="https://www.instagram.com/invites/contact/?i=1fods0czas7se&amp;utm_content=k5wffl8."
+                  class="footer__social-link"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+
+        </div>
       </div>
+    </div>
   </div>
-  <div class="footer-copyright d-flex col-lg-12 text-white text-center p-4 bg-dark"><div class="col-lg-6">© 2020 Copyright: Minhaj Optical</div><div class="col-lg-6">Developed by:<a href="https://www.quadintellectx.com/" class="ml-2 text-white">www.Quadintelletcx.com</a></div></div>
+  <div class="footer-copyright d-flex col-lg-12 text-white text-center p-4 bg-dark">
+    <div class="col-lg-6">© 2020 Copyright: Minhaj Optical</div>
+    <div class="col-lg-6">Developed by:<a href="https://www.quadintellectx.com/"
+        class="ml-2 text-white">www.Quadintelletcx.com</a></div>
+  </div>
 
 </footer>

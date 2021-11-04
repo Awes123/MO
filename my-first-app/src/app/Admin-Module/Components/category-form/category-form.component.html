@@ -1,0 +1,84 @@
+<div class="card border mt-5 ">
+  <h4 class="card-title border-bottom p-5">Add / Update</h4>
+  <div class="card-body p-5">
+    <form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+      <div class="form-horizontal">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Type</label>
+              <select name="type" class="form-control" formControlName="type">
+                <option value="0">--Select Type--</option>
+                <option value="category">Category</option>
+                <option value="homeCategory">Home Category</option>
+              </select>
+              <span class="text-danger" *ngIf="!type?.valid && (type?.touched || userSubmitted)">
+                Please select type
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="form-group row">
+              <label for="exampleFormControlSelect1">Category</label>
+              <input type="text" class="form-control" formControlName="name" placeholder="Category Name"
+                name="category1">
+              <span class="text-danger" *ngIf="!name?.valid && (name?.touched || userSubmitted)">
+                Please provide name
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="form-group">
+              <label for="exampleFormControlStatus">Status</label>
+              <select name="disabled" class="form-control" formControlName="status">
+                <option value="0">--Select Status--</option>
+                <option value="Enabled" selected="">Enabled</option>
+                <option value="Disabled">Disabled</option>
+              </select>
+              <span class="text-danger" *ngIf="!status?.valid && (status?.touched || userSubmitted)">
+                Please select status
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 p-5">
+            <div class="form-group">
+              <label for="exampleFormControlSubMenu">Sub Menu</label>
+              <select name="subMenu" class="form-control" formControlName="submenu">
+                <option value="0">--Select Sub Menu--</option>
+                <option value="No" selected="">No</option>
+                <option value="Yes">Yes</option>
+              </select>
+              <span class="text-danger" *ngIf="!submenu?.valid && (submenu?.touched || userSubmitted)">
+                Please select sub menu
+              </span>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-4 pt-2">
+            <div class="form-file mt-5">
+              <input type="file" name="bannerImage" class="file" #bannerImage
+                (change)="bannerUpload(bannerImage.files)">
+              <label class="form-file-label btn btn-default" for="customFile" (click)="bannerImage.click()">Banner
+              </label>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 pt-2">
+            <div class="form-file mt-5">
+              <input type="file" name="thumbnail" class="file" #thumbnail (change)="thumbnailUpload(thumbnail.files)">
+              <label class="form-file-label btn btn-default" for="customFile1" (click)="thumbnail.click()">
+                Thumbnail
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer text-right">
+          <button type="submit" class="btn btn-success mr-2">Create</button>
+          <span routerLink="/admin/categories" class="btn btn-outline btn-secondary btn-outline-1x">Back to
+            List</span>
+        </div>
+      </div>
+    </form>
+    <div>
+    </div>
+  </div>
+</div>
